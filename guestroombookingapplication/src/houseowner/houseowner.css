@@ -1,0 +1,130 @@
+/* houseowner.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Space Grotesk', sans-serif;
+  background: linear-gradient(135deg, #FF83CD, #8BBAE9, #FFFFFF, #171120);
+  background-size: 400% 400%;
+  animation: gradientAnimation 15s ease infinite;
+}
+
+@keyframes gradientAnimation {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.room-manager {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.room-manager h1 {
+  text-align: center;
+  color: #171120;
+  margin-bottom: 1.5rem;
+}
+
+.room-manager-container {
+  background-color: #FFFFFF;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.room-manager-containers {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: 1px solid #171120;
+  border-radius: 5px;
+}
+
+.room-manager-containers[type="file"] {
+  padding: 0.5rem;
+}
+
+.room-manager-containers[type="submit"] {
+  background-color: #FF83CD;
+  color: #FFFFFF;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.room-manager-containers[type="submit"]:hover {
+  background-color: #8BBAE9;
+}
+
+.display-rooms-containers {
+  margin-top: 2rem;
+}
+
+.display-rooms-containers h2 {
+  text-align: center;
+  color: #171120;
+  margin-bottom: 1.5rem;
+}
+
+.reveal-rooms {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.reveal-rooms > div {
+  background-color: #FFFFFF;
+  color: #FF83CD;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 50%;
+  text-align: center;
+}
+
+.reveal-rooms table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1rem;
+}
+
+.reveal-rooms th, .reveal-rooms td {
+  border: 1px solid #171120;
+  padding: 0.5rem;
+}
+
+.reveal-rooms th {
+  background-color: #171120;
+  color: #FFFFFF;
+}
+
+.reveal-rooms img {
+  border-radius: 10px;
+  margin-top: 0.5rem;
+}
+
+.edit, .delete {
+  background-color: #FF83CD;
+  color: #FFFFFF;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin: 0.5rem;
+}
+
+.edit:hover, .delete:hover {
+  background-color: #8BBAE9;
+}

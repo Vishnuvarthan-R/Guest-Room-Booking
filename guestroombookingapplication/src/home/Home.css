@@ -1,0 +1,47 @@
+/* home.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Space Grotesk', sans-serif;
+  background: linear-gradient(135deg, #FF83CD, #8BBAE9);
+  color: #FFFFFF;
+}
+
+.home-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main-content {
+  flex: 1;
+  padding: 2rem;
+}
+
+.about-section {
+  margin-top: 2rem;
+  padding: 1rem;
+  background-color: #171120;
+  border-radius: 8px;
+}
+
+.about-section h2 {
+  font-family: 'Space Grotesk', sans-serif;
+  color: #FF83CD;
+}
+
+.about-section p {
+  font-family: 'Space Mono', monospace;
+  color: #FFFFFF;
+}
+
+.footer {
+  background-color: #171120;
+  text-align: center;
+  padding: 1rem;
+  font-family: 'Space Grotesk', sans-serif;
+  color: #FFFFFF;
+}

@@ -1,0 +1,85 @@
+/* signup.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Space Grotesk', sans-serif;
+  background: linear-gradient(135deg, #FF83CD, #8BBAE9, #FFFFFF, #171120);
+  background-size: 400% 400%;
+  animation: gradientAnimation 15s ease infinite;
+}
+
+@keyframes gradientAnimation {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.signup-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.form_containers {
+  background-color: #FFFFFF;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 400px;
+}
+
+.form_containers h1 {
+  text-align: center;
+  color: #171120;
+  margin-bottom: 1.5rem;
+}
+
+.form_containers label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #171120;
+}
+
+.form_containers input, .form_containers select {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: 1px solid #171120;
+  border-radius: 5px;
+}
+
+.form_containers input[type="submit"] {
+  background-color: #FF83CD;
+  color: #FFFFFF;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.form_containers input[type="submit"]:hover {
+  background-color: #8BBAE9;
+}
+
+.form_containers .already {
+  display: block;
+  text-align: center;
+  margin-top: 1rem;
+  color: #171120;
+}
+
+.form_containers .already a {
+  color: #FF83CD;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.form_containers .already a:hover {
+  color: #8BBAE9;
+}

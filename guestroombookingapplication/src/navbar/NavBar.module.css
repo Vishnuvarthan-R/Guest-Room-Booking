@@ -1,0 +1,63 @@
+/* NavBar.module.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+
+.navBarContainer {
+  background-color: #171120;
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navList {
+  list-style-type: none;
+  display: flex;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+.navItem {
+  position: relative;
+}
+
+.navLink {
+  color: #FFFFFF;
+  text-decoration: none;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+}
+
+.navLink:hover {
+  color: #FF83CD;
+}
+
+.title {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.title .navItem {
+  flex-grow: 1;
+  text-align: center;
+}
+
+.title .navLink {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #FFFFFF;
+}
+
+.title .navLink:hover {
+  color: #8BBAE9;
+}
